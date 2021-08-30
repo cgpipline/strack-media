@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  mode: release
+  staticPath: /app/static/
+ffmpeg:
+  ffmpegBinPath: /app/natron/bin/ffmpeg
+  ffprobeBinPath: /app/natron/bin/ffprobe
+  mode: video_transcode
+mysql:
+  host: mysql
+  port: 3306
+  database: strack_media
+  username: root
+  password: strack
+  charset: utf8
+  maxQueryNumber: 1000
+amqp:
+  host: rabbitmq
+  port: 5672
+  user: strack
+  password: strack
+  vhost: /
+redis:
+  host: redis
+  password: strack
+  port: 6379
+  select: 8
+transcode:
+  workNumber: 5
