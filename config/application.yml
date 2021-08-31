@@ -27,3 +27,6 @@ redis:
   select: 8
 transcode:
   workNumber: 5
+token:
+  access_key: 448c93c47bb503b758421ee74cb25b33
+  secret_key: e8d4f937b77c0a343bbba34c5276b395
