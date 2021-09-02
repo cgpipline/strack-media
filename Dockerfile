@@ -55,12 +55,12 @@ ADD install/natron.tar.gz ${SRC_DIR}/
 ADD install/static.tar.gz ${SRC_DIR}/
 
 # 拷贝编译程序
-COPY strack_media /app/
+COPY strack_media /usr/local/bin/
 
-RUN chmod +x /app/strack_media
+RUN chmod +x /usr/local/bin/strack_media
 
 # 运行!
-CMD ["/app/strack_media"]
+CMD ["/usr/local/bin/strack_media"]
 
 # 打开8080端口
 EXPOSE 8080
